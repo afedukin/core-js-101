@@ -9,8 +9,8 @@
 /**
  * Returns the result of concatenation of two strings.
  *
- * @param {string} value1
- * @param {string} value2
+ * @param {string} value1;
+ * @param {string} value2;
  * @return {string}
  *
  * @example
@@ -18,8 +18,8 @@
  *   'aa',''    => 'aa'
  *   '',  'bb'  => 'bb'
  */
-function concatenateStrings(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function concatenateStrings(value1, value2) {
+  return `${value1}${value2}`;
 }
 
 
