@@ -227,7 +227,7 @@ function encodeToRot13(str) {
   const rot13 = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm ?!';
   let result = '';
   for (let i = 0; i < str.length; i += 1) {
-    result += rot13[(alphabet.indexOf(str[i]))];
+    result += rot13[alphabet.indexOf(str[i])];
   }
   return result;
 }
@@ -245,8 +245,8 @@ function encodeToRot13(str) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(/* value */) {
-  throw new Error('Not implemented');
+function isString(value) {
+  return ((typeof value) === 'string') && (value instanceof String);
 }
 
 /**
